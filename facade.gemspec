@@ -1,25 +1,23 @@
 require 'rubygems'
 
-spec = Gem::Specification.new do |gem|
-   gem.name      = 'facade'
-   gem.version   = '1.0.4'
-   gem.author    = 'Daniel J. Berger'
-   gem.license   = 'Artistic 2.0'
-   gem.email     = 'djberg96@gmail.com'
-   gem.homepage  = 'http://www.rubyforge.org/projects/shards'
-   gem.platform  = Gem::Platform::RUBY
-   gem.summary   = 'An easy way to implement the facade pattern in your class'
-   gem.test_file = 'test/test_facade.rb'
-   gem.has_rdoc  = true
-   gem.files     = Dir['**/*'].reject{ |f| f.include?('CVS') }
+Gem::Specification.new do |spec|
+  spec.name      = 'facade'
+  spec.version   = '1.0.5'
+  spec.author    = 'Daniel J. Berger'
+  spec.license   = 'Artistic 2.0'
+  spec.email     = 'djberg96@gmail.com'
+  spec.homepage  = 'http://www.rubyforge.org/projects/shards'
+  spec.platform  = Gem::Platform::RUBY
+  spec.summary   = 'An easy way to implement the facade pattern in your class'
+  spec.test_file = 'test/test_facade.rb'
+  spec.has_rdoc  = true
+  spec.files     = Dir['**/*'].reject{ |f| f.include?('git') }
 
-   gem.rubyforge_project = 'shards'
-   gem.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
+  spec.rubyforge_project = 'shards'
+  spec.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
 
-   gem.description = <<-EOF
-      The facade library allows you to mixin singleton methods from classes
-      or modules as instance methods of the extending class.
-   EOF
+  spec.description = <<-EOF
+    The facade library allows you to mixin singleton methods from classes
+    or modules as instance methods of the extending class.
+  EOF
 end
-
-Gem::Builder.new(spec).build

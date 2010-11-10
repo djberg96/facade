@@ -1,24 +1,27 @@
 require 'rake'
+require 'rake/clean'
 require 'rake/testtask'
-require 'rbconfig'
-include Config
 
-desc 'Install the facade library (non-gem)'
-task :install do
-   sitelibdir = CONFIG["sitelibdir"]
-   file = "lib/facade.rb"
-   FileUtils.cp(file, sitelibdir, :verbose => true)
-end
+CLEAN.include("**/*.gem", "**/*.rbc")
 
-desc 'Install the facade library as a gem'
-task :install_gem do
-   ruby 'facade.gemspec'
-   file = Dir["*.gem"].first
-   sh "gem install #{file}"
+namespace :gem do
+  desc 'Create the facade gem'
+  task :create => [:clean] do
+    spec = eval(IO.read('facade.gemspec'))
+    Gem::Builder.new(spec).build
+  end
+
+  desc 'Install the facade gem'
+  task :install => [:create] do
+    file = Dir["*.gem"].first
+    sh "gem install #{file}"
+  end
 end
 
 Rake::TestTask.new do |t|
-   t.libs << 'test'
-   t.verbose = true
-   t.warning = true
+  t.libs << 'test'
+  t.verbose = true
+  t.warning = true
 end
+
+task :default => :test
