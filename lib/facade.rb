@@ -1,6 +1,6 @@
 module Facade
   # The version of the facade library
-  FACADE_VERSION = '1.0.5'
+  FACADE_VERSION = '1.0.6'
 
   # The facade method will forward a singleton method as an instance
   # method of the extending class. If no arguments are provided, then all
@@ -11,7 +11,7 @@ module Facade
   # Example:
   #
   #  require 'facade'
-  # 
+  #
   #  class MyString < String
   #     extend Facade
   #     facade File, :dirname, :basename

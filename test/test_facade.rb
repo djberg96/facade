@@ -28,9 +28,9 @@ class TC_Facade < Test::Unit::TestCase
   def setup
     @str = FooString.new('/home/djberge')
   end
-   
+
   def test_facade_version
-    assert_equal('1.0.5', Facade::FACADE_VERSION)
+    assert_equal('1.0.6', Facade::FACADE_VERSION)
   end
 
   def test_file_methods
@@ -49,7 +49,7 @@ class TC_Facade < Test::Unit::TestCase
     assert_respond_to(@str, :pwd)
     assert_respond_to(@str, :entries)
   end
-   
+
   def test_no_clobber
     assert_respond_to(@str, :blockdev?)
     assert_equal('test', @str.blockdev?)
