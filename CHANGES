@@ -1,3 +1,6 @@
+== 1.0.6 - 12-Oct-2014
+* Updates to the gemspec and Rakefile.
+
 == 1.0.5 - 10-Nov-2010
 * Refactored the Rakefile.
 
