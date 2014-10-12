@@ -3,9 +3,6 @@
   this library wraps singleton methods from another class as instance
   methods of the current class.
 
-== Prerequisites
-  Ruby 1.8.2 or later
-
 == Installation
   gem install facade
    
@@ -26,7 +23,7 @@
   shamelessly plagiarized.
 
 == Copyright
-  Copyright (c) 2005-2010 Daniel J. Berger
+  Copyright (c) 2005-2014 Daniel J. Berger
    
 == License
   Artistic 2.0
