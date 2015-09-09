@@ -1,3 +1,7 @@
+== 1.0.7 - 9-Sep-2015
+* This gem is now signed.
+* The Rakefile tasks now assume Rubygems 2.x.
+
 == 1.0.6 - 12-Oct-2014
 * Updates to the gemspec and Rakefile.
 
