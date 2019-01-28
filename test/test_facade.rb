@@ -30,7 +30,8 @@ class TC_Facade < Test::Unit::TestCase
   end
 
   def test_facade_version
-    assert_equal('1.0.7', Facade::FACADE_VERSION)
+    assert_equal('1.1.0', Facade::FACADE_VERSION)
+    assert_true(Facade::FACADE_VERSION.frozen?)
   end
 
   def test_file_methods
