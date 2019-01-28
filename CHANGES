@@ -1,3 +1,9 @@
+== 1.1.0 - 28-Jan-2019
+* License switched to Apache-2.0.
+* The FACADE_VERSION constant is now frozen.
+* Added some metadata to the gemspec.
+* Updated the cert, should be good for about 10 years.
+
 == 1.0.7 - 9-Sep-2015
 * This gem is now signed.
 * The Rakefile tasks now assume Rubygems 2.x.
