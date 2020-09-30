@@ -1,3 +1,10 @@
+== 1.2.0 - 30-Sep-2020
+* Switched from test-unit to rspec, and added a Gemfile.
+* Use markdown for text files.
+
+== 1.1.1 - 2-Jun-2020
+* Added a LICENSE file as per the Apache-2.0 requirements.
+
 == 1.1.0 - 28-Jan-2019
 * License switched to Apache-2.0.
 * The FACADE_VERSION constant is now frozen.
