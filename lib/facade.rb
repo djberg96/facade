@@ -1,6 +1,6 @@
 module Facade
   # The version of the facade library
-  FACADE_VERSION = '1.1.1'.freeze
+  FACADE_VERSION = '1.2.0'.freeze
 
   # The facade method will forward a singleton method as an instance
   # method of the extending class. If no arguments are provided, then all
