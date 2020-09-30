@@ -7,27 +7,17 @@
 require 'rspec'
 require 'facade'
 
-module Baz
-  def testme(str)
-    str
-  end
-end
-
 RSpec.describe Facade do
-  let(:mod) do
-    Module.new do |m|
-      def testme(str)
-        str
-      end
-    end
-  end
-
   let(:facade) do
+    module FooModule
+      def testme(str); str; end
+    end
+
     Class.new(String) do |klass|
       klass.extend Facade
       facade File, :basename, 'dirname'
       facade Dir
-      facade Baz
+      facade FooModule
 
       def blockdev?
         'test'
