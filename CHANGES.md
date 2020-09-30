@@ -1,46 +1,46 @@
-== 1.2.0 - 30-Sep-2020
+## 1.2.0 - 30-Sep-2020
 * Switched from test-unit to rspec, and added a Gemfile.
 * Use markdown for text files.
 
-== 1.1.1 - 2-Jun-2020
+## 1.1.1 - 2-Jun-2020
 * Added a LICENSE file as per the Apache-2.0 requirements.
 
-== 1.1.0 - 28-Jan-2019
+## 1.1.0 - 28-Jan-2019
 * License switched to Apache-2.0.
 * The FACADE_VERSION constant is now frozen.
 * Added some metadata to the gemspec.
 * Updated the cert, should be good for about 10 years.
 
-== 1.0.7 - 9-Sep-2015
+## 1.0.7 - 9-Sep-2015
 * This gem is now signed.
 * The Rakefile tasks now assume Rubygems 2.x.
 
-== 1.0.6 - 12-Oct-2014
+## 1.0.6 - 12-Oct-2014
 * Updates to the gemspec and Rakefile.
 
-== 1.0.5 - 10-Nov-2010
+## 1.0.5 - 10-Nov-2010
 * Refactored the Rakefile.
 
-== 1.0.4 - 3-Aug-2009
+## 1.0.4 - 3-Aug-2009
 * Fixed a symbol vs string issue for Ruby 1.9.x.
 
-== 1.0.3 - 21-Jul-2009
+## 1.0.3 - 21-Jul-2009
 * License changed to Artistic 2.0.
 * Documentation updates.
 * Test file renamed to test_facade.rb.
 * Some Rakefile and gemspec updates
 * One test modified so that it passes with 1.9.x as well.
 
-== 1.0.2 - 11-Jun-2007
+## 1.0.2 - 11-Jun-2007
 * Added a Rakefile with tasks for installation and testing.
 * Removed the install.rb file. Installation is now handled as a Rake task.
 * Some test suite refactoring.
 * Fixed the FACADE_VERSION number (now 1.0.2, was 1.1.0).
 
-== 1.0.1 - 8-Jun-2005
+## 1.0.1 - 8-Jun-2005
 * Moved project to RubyForge.
 * Added a .gemspec file.
 * Added a MANIFEST.
 
-== 1.0.0 - 18-May-2005
+## 1.0.0 - 18-May-2005
 * Initial release
