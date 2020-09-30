@@ -12,7 +12,8 @@ require 'facade'
 
 class MyString < String
   extend Facade
-  facade File, :dirname, :basename
+  facade Dir                       # extend all methods
+  facade File, :dirname, :basename # extend only specified methods
 end
 
 f = MyString.new('/home/djberge')
