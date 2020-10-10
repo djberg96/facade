@@ -1,3 +1,7 @@
+## 1.2.1 - 10-Oct-2020
+* Remove the old test file and directory, oops. Thanks go to Michael Crusoe
+  for the spot.
+
 ## 1.2.0 - 30-Sep-2020
 * Switched from test-unit to rspec, and added a Gemfile.
 * Use markdown for text files.
