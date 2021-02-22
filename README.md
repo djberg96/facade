@@ -7,7 +7,7 @@ methods of the current class.
 `gem install facade`
    
 ## Usage
-```
+```ruby
 require 'facade'
 
 class MyString < String
@@ -26,7 +26,7 @@ Eero Saynatkari, Eric Hodel and Michael Granger for ideas and code which I
 shamelessly plagiarized.
 
 ## Copyright
-Copyright (c) 2005-2020 Daniel J. Berger
+Copyright (c) 2005-2021 Daniel J. Berger
    
 ## License
 Apache-2.0
