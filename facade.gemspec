@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     'homepage_uri'      => 'https://github.com/djberg96/facade',
     'bug_tracker_uri'   => 'https://github.com/djberg96/facade/issues',
-    'changelog_uri'     => 'https://github.com/djberg96/facade/blob/main/CHANGES',
+    'changelog_uri'     => 'https://github.com/djberg96/facade/blob/main/CHANGES.md',
     'documentation_uri' => 'https://github.com/djberg96/facade/wiki',
     'source_code_uri'   => 'https://github.com/djberg96/facade',
     'wiki_uri'          => 'https://github.com/djberg96/facade/wiki'
