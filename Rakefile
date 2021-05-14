@@ -8,7 +8,7 @@ namespace :gem do
   desc 'Create the facade gem'
   task :create => [:clean] do
     require 'rubygems/package'
-    spec = eval(IO.read('facade.gemspec'))
+    spec = Gem::Specification.load('facade.gemspec')
     spec.signing_key = File.join(Dir.home, '.ssh', 'gem-private_key.pem') 
     Gem::Package.build(spec)
   end
