@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/djberg96/facade/actions/workflows/ruby.yml/badge.svg)](https://github.com/djberg96/facade/actions/workflows/ruby.yml)
+
 ## Synopsis
 An easy way to implement the facade pattern in your classes. In short,
 this library wraps singleton methods from another class as instance
