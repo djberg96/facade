@@ -16,12 +16,13 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency('rspec', '~> 3.9')
 
   spec.metadata = {
-    'homepage_uri'      => 'https://github.com/djberg96/facade',
-    'bug_tracker_uri'   => 'https://github.com/djberg96/facade/issues',
-    'changelog_uri'     => 'https://github.com/djberg96/facade/blob/main/CHANGES.md',
-    'documentation_uri' => 'https://github.com/djberg96/facade/wiki',
-    'source_code_uri'   => 'https://github.com/djberg96/facade',
-    'wiki_uri'          => 'https://github.com/djberg96/facade/wiki'
+    'homepage_uri'          => 'https://github.com/djberg96/facade',
+    'bug_tracker_uri'       => 'https://github.com/djberg96/facade/issues',
+    'changelog_uri'         => 'https://github.com/djberg96/facade/blob/main/CHANGES.md',
+    'documentation_uri'     => 'https://github.com/djberg96/facade/wiki',
+    'source_code_uri'       => 'https://github.com/djberg96/facade',
+    'wiki_uri'              => 'https://github.com/djberg96/facade/wiki',
+    'rubygems_mfa_required' => 'true'
   } 
 
   spec.description = <<-EOF
