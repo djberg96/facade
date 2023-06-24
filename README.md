@@ -7,6 +7,9 @@ methods of the current class.
 
 ## Installation
 `gem install facade`
+
+## Adding the trusted cert
+`gem cert --add <(curl -Ls https://raw.githubusercontent.com/djberg96/facade/main/certs/djberg96_pub.pem)`
    
 ## Usage
 ```ruby
@@ -28,7 +31,7 @@ Eero Saynatkari, Eric Hodel and Michael Granger for ideas and code which I
 shamelessly plagiarized.
 
 ## Copyright
-Copyright (c) 2005-2021 Daniel J. Berger
+Copyright (c) 2005-2023 Daniel J. Berger
    
 ## License
 Apache-2.0
