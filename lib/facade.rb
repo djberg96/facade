@@ -2,7 +2,7 @@
 
 module Facade
   # The version of the facade library
-  FACADE_VERSION = '1.2.0'
+  FACADE_VERSION = '1.2.1'
 
   # The facade method will forward a singleton method as an instance
   # method of the extending class. If no arguments are provided, then all
@@ -35,15 +35,11 @@ module Facade
     # Cache the extended object for modules to avoid creating it on every call
     mod_proxy = klass.is_a?(Module) && !klass.is_a?(Class) ? Object.new.extend(klass) : nil
 
-    methods.each do |methname|
-      define_method(methname) do
-        meth = if klass.is_a?(Class)
-                 klass.method(methname)
-               else
-                 mod_proxy.method(methname)
-               end
+    methods.each do |method_name|
+      define_method(method_name) do
+        meth = klass.is_a?(Class) ? klass.method(method_name) : mod_proxy.method(method_name)
 
-        if meth.arity.zero? # Zero or one argument
+        if meth.arity.zero?
           meth.call
         else
           meth.call(self)
