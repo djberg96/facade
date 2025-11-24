@@ -40,7 +40,7 @@ rake gem:install   # Build + install locally
 ```
 
 ### CI/CD
-- Tests run on Ruby 2.6-3.3, JRuby, TruffleRuby
+- Tests run on Ruby 2.7-3.4, JRuby, TruffleRuby
 - All platforms: Ubuntu, macOS, Windows (except JRuby/TruffleRuby skip Windows)
 - Triggered on push/PR to main, ignoring markdown changes
 
@@ -52,7 +52,7 @@ rake gem:install   # Build + install locally
 - **Test naming**: Spec descriptions use "example" not "it"
 
 ## Critical Constraints
-- Must support Ruby 2.6+ (legacy compatibility)
+- Must support Ruby 2.7+ (legacy compatibility)
 - Cannot break existing instance methods (no-clobber is core feature)
 - Zero dependencies (stdlib only)
 - Must handle both Class and Module targets differently
