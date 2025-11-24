@@ -32,9 +32,16 @@ module Facade
 
     methods -= instance_methods.map(&:to_sym) # No clobber
 
+    # Cache the extended object for modules to avoid creating it on every call
+    mod_proxy = klass.is_a?(Module) && !klass.is_a?(Class) ? Object.new.extend(klass) : nil
+
     methods.each do |methname|
       define_method(methname) do
-        meth = klass.is_a?(Class) ? klass.method(methname) : Object.new.extend(klass).method(methname)
+        meth = if klass.is_a?(Class)
+                 klass.method(methname)
+               else
+                 mod_proxy.method(methname)
+               end
 
         if meth.arity.zero? # Zero or one argument
           meth.call
