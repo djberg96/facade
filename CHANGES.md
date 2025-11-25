@@ -1,6 +1,10 @@
-## 1.2.1 - 24-Nov-2025
+## 1.2.2 - 24-Nov-2025
 * Cache an extended object internally to avoid unnecessary, repeated calls.
 * Minor spec update.
+
+## 1.2.1 - 16-Feb-2024
+* Mainly rubocop cleanup.
+* Apparently I forgot to bump the version when I did this, oops.
 
 ## 1.2.0 - 30-Sep-2020
 * Switched from test-unit to rspec, and added a Gemfile.
