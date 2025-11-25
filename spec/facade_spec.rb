@@ -28,7 +28,7 @@ RSpec.describe Facade do
   let(:string) { facade.new('/home/whatever') }
 
   example "facade module has expected version set and it's frozen" do
-    expect(Facade::FACADE_VERSION).to eq('1.2.0')
+    expect(Facade::FACADE_VERSION).to eq('1.2.1')
     expect(Facade::FACADE_VERSION).to be_frozen
   end
 
@@ -54,7 +54,7 @@ RSpec.describe Facade do
     expect(string.blockdev?).to eq('test')
   end
 
-  example "module_methods" do
+  example "module methods behave as expected" do
     expect(string).to respond_to(:testme)
     expect(string.testme).to eq('/home/whatever')
   end
