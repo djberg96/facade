@@ -8,11 +8,13 @@ require 'rspec'
 require 'facade'
 
 RSpec.describe Facade do
-  let(:facade) do
-    module FooModule
+  before(:all) do
+    FooModule = Module.new do
       def testme(str); str; end
-    end
+    end unless defined?(FooModule)
+  end
 
+  let(:facade) do
     Class.new(String) do |klass|
       klass.extend Facade
       facade File, :basename, 'dirname'
